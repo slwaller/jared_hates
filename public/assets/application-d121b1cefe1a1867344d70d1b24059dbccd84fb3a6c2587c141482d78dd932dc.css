@@ -1,0 +1,183 @@
+/*body {
+    font-family: sans-serif;
+    background: image-url(/assets/jamby1-8111a3849899759763405096de507dc69f76416537b9efcf5126a362cc3631b3.png);
+}
+#container {
+    background: #DDD;
+    max-width: 1000px;
+}
+.item {
+    width: 300px;
+    float: left;
+}
+.item img {
+    display: block;
+    width: 100%;
+}
+button {
+    font-size: 18px;
+}
+
+h1{
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  color: #fff;
+  padding-top: 30px;
+}*/
+@import url(http://fonts.googleapis.com/css?family=Anaheim);
+/* line 30, /Users/Sam/ThingsJaredHates/app/assets/stylesheets/welcome.scss */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+/* line 37, /Users/Sam/ThingsJaredHates/app/assets/stylesheets/welcome.scss */
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* line 41, /Users/Sam/ThingsJaredHates/app/assets/stylesheets/welcome.scss */
+html,
+body {
+  min-height: 100%;
+}
+
+/* line 45, /Users/Sam/ThingsJaredHates/app/assets/stylesheets/welcome.scss */
+body {
+  background: url(/assets/jamby1-8111a3849899759763405096de507dc69f76416537b9efcf5126a362cc3631b3.png);
+}
+
+/* line 48, /Users/Sam/ThingsJaredHates/app/assets/stylesheets/welcome.scss */
+h1 {
+  display: table;
+  margin: 5% auto 0;
+  text-transform: uppercase;
+  font-family: 'Anaheim', sans-serif;
+  font-size: 4em;
+  font-weight: 400;
+  text-shadow: 0 1px white, 0 2px black;
+}
+
+/* line 57, /Users/Sam/ThingsJaredHates/app/assets/stylesheets/welcome.scss */
+.container {
+  margin: 4% auto;
+  width: 210px;
+  height: 140px;
+  position: relative;
+  perspective: 1000px;
+}
+
+/* line 64, /Users/Sam/ThingsJaredHates/app/assets/stylesheets/welcome.scss */
+#carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation: rotation 20s infinite linear;
+}
+
+/* line 71, /Users/Sam/ThingsJaredHates/app/assets/stylesheets/welcome.scss */
+#carousel:hover {
+  animation-play-state: paused;
+}
+
+/* line 74, /Users/Sam/ThingsJaredHates/app/assets/stylesheets/welcome.scss */
+#carousel figure {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 50% px;
+  left: 10px;
+  top: 10px;
+  background: black;
+  overflow: hidden;
+  border: solid 5px black;
+}
+
+/* line 85, /Users/Sam/ThingsJaredHates/app/assets/stylesheets/welcome.scss */
+#carousel figure:nth-child(1) {
+  transform: rotateY(0deg) translateZ(288px);
+}
+
+/* line 86, /Users/Sam/ThingsJaredHates/app/assets/stylesheets/welcome.scss */
+#carousel figure:nth-child(2) {
+  transform: rotateY(40deg) translateZ(288px);
+}
+
+/* line 87, /Users/Sam/ThingsJaredHates/app/assets/stylesheets/welcome.scss */
+#carousel figure:nth-child(3) {
+  transform: rotateY(80deg) translateZ(288px);
+}
+
+/* line 88, /Users/Sam/ThingsJaredHates/app/assets/stylesheets/welcome.scss */
+#carousel figure:nth-child(4) {
+  transform: rotateY(120deg) translateZ(288px);
+}
+
+/* line 89, /Users/Sam/ThingsJaredHates/app/assets/stylesheets/welcome.scss */
+#carousel figure:nth-child(5) {
+  transform: rotateY(160deg) translateZ(288px);
+}
+
+/* line 90, /Users/Sam/ThingsJaredHates/app/assets/stylesheets/welcome.scss */
+#carousel figure:nth-child(6) {
+  transform: rotateY(200deg) translateZ(288px);
+}
+
+/* line 91, /Users/Sam/ThingsJaredHates/app/assets/stylesheets/welcome.scss */
+#carousel figure:nth-child(7) {
+  transform: rotateY(240deg) translateZ(288px);
+}
+
+/* line 92, /Users/Sam/ThingsJaredHates/app/assets/stylesheets/welcome.scss */
+#carousel figure:nth-child(8) {
+  transform: rotateY(280deg) translateZ(288px);
+}
+
+/* line 93, /Users/Sam/ThingsJaredHates/app/assets/stylesheets/welcome.scss */
+#carousel figure:nth-child(9) {
+  transform: rotateY(320deg) translateZ(288px);
+}
+
+/* line 95, /Users/Sam/ThingsJaredHates/app/assets/stylesheets/welcome.scss */
+img {
+  -webkit-filter: grayscale(1);
+  cursor: pointer;
+  transition: all .5s ease;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* line 102, /Users/Sam/ThingsJaredHates/app/assets/stylesheets/welcome.scss */
+img:hover {
+  -webkit-filter: grayscale(0);
+  transform: scale(1.2, 1.2);
+}
+
+@keyframes rotation {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
