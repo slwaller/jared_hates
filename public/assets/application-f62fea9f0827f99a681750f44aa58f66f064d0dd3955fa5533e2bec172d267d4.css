@@ -1,0 +1,51 @@
+/* line 1, /Users/Sam/ThingsJaredHates/app/assets/stylesheets/welcome.scss */
+body {
+  font-family: sans-serif;
+  background: url(/assets/jamby1-8111a3849899759763405096de507dc69f76416537b9efcf5126a362cc3631b3.png);
+}
+
+/* line 5, /Users/Sam/ThingsJaredHates/app/assets/stylesheets/welcome.scss */
+#container {
+  background: #DDD;
+  max-width: 1000px;
+}
+
+/* line 9, /Users/Sam/ThingsJaredHates/app/assets/stylesheets/welcome.scss */
+.item {
+  width: 200px;
+  float: left;
+}
+
+/* line 13, /Users/Sam/ThingsJaredHates/app/assets/stylesheets/welcome.scss */
+.item img {
+  display: block;
+  width: 100%;
+}
+
+/* line 17, /Users/Sam/ThingsJaredHates/app/assets/stylesheets/welcome.scss */
+button {
+  font-size: 18px;
+}
+
+/* line 21, /Users/Sam/ThingsJaredHates/app/assets/stylesheets/welcome.scss */
+h1 {
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  color: #fff;
+  padding-top: 30px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
